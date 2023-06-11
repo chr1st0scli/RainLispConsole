@@ -5,7 +5,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>RainLisp.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="RainLisp.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="RainLisp" Version="1.0.0-alpha002" />

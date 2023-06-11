@@ -6,6 +6,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <ApplicationIcon>RainLisp.ico</ApplicationIcon>
+    <Title>A REPL and code editor console application for RainLisp</Title>
+    <Version>1.0.0-alpha001</Version>
+    <Authors>Christos Giamouridis</Authors>
+    <Company>Rainsoft</Company>
+    <Description>A REPL and code editor console application for RainLisp.</Description>
+    <Copyright>2023</Copyright>
+    <PackageProjectUrl>https://github.com/chr1st0scli/RainLispConsole</PackageProjectUrl>
+    <PackageIcon>RainLisp-Colored-128x128.png</PackageIcon>
+    <PackageReadmeFile>nuget.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/chr1st0scli/RainLispConsole</RepositoryUrl>
+    <PackageTags>lisp;interpreter;repl;programming;language;.net;</PackageTags>
+    <PackAsTool>True</PackAsTool>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,8 +26,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\nuget.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="RainLisp" Version="1.0.0-alpha002" />
     <PackageReference Include="Terminal.Gui" Version="1.12.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\RainLisp-Colored-128x128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -37,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="RainLisp" Version="1.0.0-alpha002" />
+    <PackageReference Include="RainLisp" Version="1.0.0-alpha006" />
     <PackageReference Include="Terminal.Gui" Version="1.12.1" />
   </ItemGroup>
 

@@ -18,9 +18,14 @@ It can be used in three ways:
 ## Installation
 You need to have .NET 6 or later installed.
 
-Run the following command in a command line shell to download RainLispConsole from Nuget and install it as a global tool.
+In order to download RainLispConsole from NuGet and install it as a global tool, run the following command in a command line shell.
 ```
 dotnet tool install -g RainLispConsole --version "*-alpha*"
+```
+
+If you already have it installed and you want to update it, run the following command.
+```
+dotnet tool update -g RainLispConsole --version "*-alpha*"
 ```
 
 ## Usage

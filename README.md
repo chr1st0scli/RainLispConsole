@@ -1,6 +1,6 @@
 # RainLisp Console
 
-[![nuget](https://img.shields.io/nuget/vpre/RainLisp?color=blue)](https://www.nuget.org/packages/RainLisp/)
+[![nuget](https://img.shields.io/nuget/vpre/RainLispConsole?color=blue)](https://www.nuget.org/packages/RainLispConsole/)
 [![License](https://img.shields.io/github/license/chr1st0scli/rainlisp)](LICENSE.txt)
 
 ![RainLisp Console](RainLispConsole/Images/RainLisp-Colored-128x128.png)

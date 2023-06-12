@@ -19,6 +19,7 @@
     <PackageTags>lisp;interpreter;repl;programming;language;.net;</PackageTags>
     <PackAsTool>True</PackAsTool>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,6 +27,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Images\RainLisp-Colored-128x128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -39,13 +44,6 @@
   <ItemGroup>
     <PackageReference Include="RainLisp" Version="1.0.0-alpha006" />
     <PackageReference Include="Terminal.Gui" Version="1.12.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Images\RainLisp-Colored-128x128.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
   </ItemGroup>
 
 </Project>

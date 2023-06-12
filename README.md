@@ -35,4 +35,4 @@ RainLispConsole
 ```
 If needed, you can then choose the *Help* mode to see more information.
 
-In order to get started with RainLisp, you can visit its [repository](https://github.com/chr1st0scli/RainLisp) where you can find a tutorial and other material.
+In order to get started with RainLisp, you can visit its [repository](https://github.com/chr1st0scli/RainLisp), where you can find a tutorial and other material.

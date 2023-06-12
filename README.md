@@ -1,7 +1,7 @@
 # RainLisp Console
 
 [![nuget](https://img.shields.io/nuget/vpre/RainLispConsole?color=blue)](https://www.nuget.org/packages/RainLispConsole/)
-[![License](https://img.shields.io/github/license/chr1st0scli/rainlisp)](LICENSE.txt)
+[![License](https://img.shields.io/github/license/chr1st0scli/rainlispconsole)](LICENSE.txt)
 
 ![RainLisp Console](RainLispConsole/Images/RainLisp-Colored-128x128.png)
 
@@ -16,11 +16,11 @@ It can be used in three ways:
 - As a tool with command line arguments that allows the interpreter to be used with other editors or tools.
 
 ## Installation
-You need to have .NET 6 or latter installed.
+You need to have .NET 6 or later installed.
 
 Run the following command in a command line shell to download RainLispConsole from Nuget and install it as a global tool.
 ```
-dotnet tool install -g RainLispConsole
+dotnet tool install -g RainLispConsole --version 1.0.0-alpha002
 ```
 
 ## Usage

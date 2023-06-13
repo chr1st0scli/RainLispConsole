@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "RainLispConsole": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

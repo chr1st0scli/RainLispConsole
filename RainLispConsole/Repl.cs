@@ -1,7 +1,14 @@
-﻿namespace RainLispConsole
+﻿using System.Runtime.InteropServices;
+
+namespace RainLispConsole
 {
     internal static class Repl
     {
+        private static readonly bool _windowsPlatform;
+
+        static Repl()
+            => _windowsPlatform = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
+
         internal static string? ReadLine()
         {
             Console.Write(Resources.REPL_PROMPT);
@@ -10,14 +17,14 @@
 
         internal static string? ReadLines()
         {
-            const char CTRL_Z = '\u001a';
+            const char CTRL_Z = '\u001a', CTRL_D = '\u0004';
 
-            Console.WriteLine(Resources.REPL_MULTILINE_PROMPT);
+            Console.WriteLine(_windowsPlatform ? Resources.REPL_MULTILINE_PROMPT_WIN_OS : Resources.REPL_MULTILINE_PROMPT_OTHER_OS);
 
             string input = Console.In.ReadToEnd();
 
             // Remove the Ctrl + Z in case the user typed it in next to other characters, instead on its own on a separate line.
-            return input.Trim().Trim(CTRL_Z);
+            return input.Trim().Trim(_windowsPlatform ? CTRL_Z : CTRL_D);
         }
 
         internal static void Print(string result)

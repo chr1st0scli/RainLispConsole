@@ -45,6 +45,7 @@ Console.Write(Resources.WELCOME_MESSAGE);
 
 // If no command line arguments are specified, the user enters a REPL or editor mode.
 Mode mode = Mode.None;
+bool runningInContainer = Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") == "true";
 do
 {
     Console.WriteLine();
@@ -57,6 +58,14 @@ do
         ConsoleKey.D3 or ConsoleKey.NumPad3 => Mode.Help,
         _ => Mode.None
     };
+
+    if (mode == Mode.Editor && runningInContainer)
+    {
+        Console.WriteLine();
+        Console.WriteLine(Resources.EDITOR_NOT_SUPPORTED_IN_CONTAINER);
+        mode = Mode.None;
+    }
+
 } while (mode == Mode.None);
 
 if (mode == Mode.Help)

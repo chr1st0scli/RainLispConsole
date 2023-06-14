@@ -1,7 +1,8 @@
 # RainLisp Console
 
-[![nuget](https://img.shields.io/nuget/vpre/RainLispConsole?color=blue)](https://www.nuget.org/packages/RainLispConsole/)
-[![License](https://img.shields.io/github/license/chr1st0scli/rainlispconsole)](LICENSE.txt)
+![nuget](https://img.shields.io/nuget/vpre/RainLispConsole?color=blue)
+[![docker](https://img.shields.io/docker/v/chr1st0scli/rainlispconsole?label=docker%20version)](https://hub.docker.com/r/chr1st0scli/rainlispconsole)
+![License](https://img.shields.io/github/license/chr1st0scli/rainlispconsole)
 
 RainLisp Console allows you to run the programs you write in [RainLisp](https://github.com/chr1st0scli/RainLisp).
 
@@ -33,3 +34,4 @@ If needed, you can then choose the *Help* mode to see more information.
 
 In order to get started with RainLisp, you can visit its [repository](https://github.com/chr1st0scli/RainLisp), where you can find
 a [tutorial](https://github.com/chr1st0scli/RainLisp/blob/master/RainLisp/Docs/quick-start.md) and other material.
+

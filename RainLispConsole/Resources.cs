@@ -35,7 +35,6 @@ Example: RainLispConsole -f somefile.rl";
         internal const string REPL_PROMPT = "Hit Enter to evaluate > ";
         internal const string REPL_MULTILINE_PROMPT_WIN_OS = "Ctrl + Z on a new line and hit Enter to evaluate >";
         internal const string REPL_MULTILINE_PROMPT_OTHER_OS = "Ctrl + D twice on a new line to evaluate >";
-        internal const string EDITOR_NOT_SUPPORTED_IN_CONTAINER = "Editor mode is not available within a container yet. Please run the application independently.";
         internal const string TITLE = "Rainλisp";
         internal const string CODE_EDITOR = "Code Editor";
         internal const string OUTPUT = "Output";

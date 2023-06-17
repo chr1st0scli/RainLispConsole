@@ -50,8 +50,5 @@ To run it, execute the following command.
 docker run -it chr1st0scli/rainlispconsole
 ```
 
-> Note that currently, you cannot use the editor mode inside a container, but you can use the REPL modes.
-Though, a future version is expected to support this.
-
 In order to get started with RainLisp, you can visit its [repository](https://github.com/chr1st0scli/RainLisp), where you can find
 a [tutorial](https://github.com/chr1st0scli/RainLisp/blob/master/RainLisp/Docs/quick-start.md) and other material.

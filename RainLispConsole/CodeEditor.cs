@@ -74,7 +74,7 @@ namespace RainLispConsole
             var statusBarItems = new StatusItem[]
             {
                 _cursorPosStatusItem,
-                new(Key.CtrlMask | Key.Enter, Resources.EVALUATE, Evaluate),
+                new(Key.CtrlMask | Key.F5, Resources.EVALUATE, Evaluate),
                 new(Key.CtrlMask | Key.F4, Resources.QUIT, Quit),
             };
 
@@ -225,7 +225,7 @@ namespace RainLispConsole
             => SetWorkingFile(filePath, () => File.WriteAllText(filePath, _inputTextView.Text.ToString()));
 
         private void OpenFile(string filePath)
-            => SetWorkingFile(filePath, () => 
+            => SetWorkingFile(filePath, () =>
             {
                 _inputTextView.ClearCodeAnalysisCache();
                 _inputTextView.Text = File.ReadAllText(filePath);
@@ -255,7 +255,7 @@ namespace RainLispConsole
             => MessageBox.Query(Resources.HELP, Resources.HELP_CONTENTS, Resources.OK);
 
         private void About()
-            => MessageBox.Query(Resources.ABOUT, Resources.INFO, Resources.OK);
+            => MessageBox.Query(Resources.ABOUT, string.Format(Resources.INFO, Util.TryGetCurrentVersion()), Resources.OK);
 
         private void Evaluate()
         {

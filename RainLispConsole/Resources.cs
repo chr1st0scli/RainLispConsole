@@ -12,6 +12,9 @@
         internal const string COMMAND_LINE_HELP = @"
 HELP
 ====
+
+Console version {0}
+
 Modes
 -----
 Single-line REPL provides a Read-Eval-Print-Loop, based on individual line evaluations.
@@ -35,12 +38,11 @@ Example: RainLispConsole -f somefile.rl";
         internal const string REPL_PROMPT = "Hit Enter to evaluate > ";
         internal const string REPL_MULTILINE_PROMPT_WIN_OS = "Ctrl + Z on a new line and hit Enter to evaluate >";
         internal const string REPL_MULTILINE_PROMPT_OTHER_OS = "Ctrl + D twice on a new line to evaluate >";
-        internal const string EDITOR_NOT_SUPPORTED_IN_CONTAINER = "Editor mode is not available within a container yet. Please run the application independently.";
         internal const string TITLE = "Rainλisp";
         internal const string CODE_EDITOR = "Code Editor";
         internal const string OUTPUT = "Output";
         internal const string FILE_EXT = ".rl";
-        internal const string EVALUATE = "Ctrl-Enter Evaluate";
+        internal const string EVALUATE = "Ctrl-F5 Evaluate";
         internal const string QUIT = "Ctrl-F4 Quit";
         internal const string NEW = "New";
         internal const string OPEN = "Open";
@@ -61,7 +63,11 @@ Example: RainLispConsole -f somefile.rl";
         internal const string YES = "Yes";
         internal const string NO = "No";
         internal const string CURSOR_POS_FORMAT = "Ln: {0}, Col: {1}";
-        internal const string HELP_CONTENTS = @"https://github.com/chr1st0scli/RainLisp/blob/master/RainLisp/Docs/contents.md
+        internal const string HELP_CONTENTS = @"
+Specifications:
+https://github.com/chr1st0scli/RainLisp/blob/master/RainLisp/Docs/contents.md
+
+Tutorial:
 https://github.com/chr1st0scli/RainLisp/blob/master/RainLisp/Docs/quick-start.md";
 
         internal const string LOGO = @"
@@ -86,6 +92,8 @@ https://github.com/chr1st0scli/RainLisp/blob/master/RainLisp/Docs/quick-start.md
 ";
 
         internal const string INFO = @"
+Console version {0}
+
   _____       _      __     _           
  |  __ \     (_)     \ \   (_)          
  | |__) |__ _ _ _ __  \ \   _ ___ _ __  

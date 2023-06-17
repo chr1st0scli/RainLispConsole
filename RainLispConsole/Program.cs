@@ -3,9 +3,11 @@ using RainLisp;
 using RainLisp.Evaluation;
 using RainLispConsole;
 
-// By convention, a 0 process exit code represents a success, whereas any other is a failure.
+// By convention, a process exiting with 0 represents a success, whereas any other is a failure.
 int exitCode = 0;
 var interpreter = new Interpreter();
+
+void PrintHelp() => Console.WriteLine(string.Format(Resources.COMMAND_LINE_HELP, Util.TryGetCurrentVersion()));
 
 #region Command line arguments.
 void PrintErrorAndSetExitCode(string message, Exception ex, bool unknownError)
@@ -18,8 +20,7 @@ void PrintErrorAndSetExitCode(string message, Exception ex, bool unknownError)
 if (args.Length > 0)
 {
     if (args.Length != 2 || (args[0] != Resources.CODE_OPTION && args[0] != Resources.FILE_OPTION))
-        Console.WriteLine(Resources.COMMAND_LINE_HELP);
-
+        PrintHelp();
     else
     {
         try
@@ -63,7 +64,7 @@ do
 if (mode == Mode.Help)
 {
     Console.WriteLine();
-    Console.WriteLine(Resources.COMMAND_LINE_HELP);
+    PrintHelp();
 }
 else if (mode == Mode.Editor)
 {

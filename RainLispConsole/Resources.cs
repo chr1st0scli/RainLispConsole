@@ -4,8 +4,8 @@
     {
         internal const string WELCOME_MESSAGE = @"Available Modes:
 ----------------
-0: Single-line REPL,
-1: Multi-line REPL,
+0: Single-line REPL
+1: Multi-line REPL
 2: Code Editor
 3: Help
 ----------------";

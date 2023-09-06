@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ApplicationIcon>RainLisp.ico</ApplicationIcon>
     <Title>A REPL and code editor console application for RainLisp</Title>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Christos Giamouridis</Authors>
     <Company>Rainsoft</Company>
     <Description>A REPL and code editor console application for RainLisp.</Description>
@@ -42,6 +42,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
     <PackageReference Include="RainLisp" Version="1.0.0" />
-    <PackageReference Include="Terminal.Gui" Version="1.13.4" />
+    <PackageReference Include="Terminal.Gui" Version="1.14.0" />
   </ItemGroup>
 </Project>

@@ -16,16 +16,15 @@ Semantic versioning is followed.
 
 ### Removed
 
-## [1.0.1] - 2023-09-06
-
-### Added
-
-### Fixed
-Fixes [#7](https://github.com/chr1st0scli/RainLispConsole/issues/7). Output panel of code editor cannot be scrolled with mouse.
+## [1.1.0] - 2024-02-03
 
 ### Changed
+- Upgrade dependency RainLisp 1.0.0 to 1.1.0.
 
-### Removed
+## [1.0.1] - 2023-09-06
+
+### Fixed
+- Fixes [#7](https://github.com/chr1st0scli/RainLispConsole/issues/7). Output panel of code editor cannot be scrolled with mouse.
 
 ## [1.0.0] - 2023-07-20
 

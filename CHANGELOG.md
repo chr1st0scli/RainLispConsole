@@ -20,6 +20,7 @@ Semantic versioning is followed.
 
 ### Changed
 - Upgrade dependency RainLisp 1.0.0 to 1.1.0.
+- Upgrade dependency Terminal.Gui 1.14.0 to 1.15.1.
 
 ## [1.0.1] - 2023-09-06
 

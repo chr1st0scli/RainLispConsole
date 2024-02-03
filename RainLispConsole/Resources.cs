@@ -14,6 +14,7 @@ HELP
 ====
 
 Console version {0}
+RainLisp version {1}
 
 Modes
 -----
@@ -64,11 +65,11 @@ Example: RainLispConsole -f somefile.rl";
         internal const string NO = "No";
         internal const string CURSOR_POS_FORMAT = "Ln: {0}, Col: {1}";
         internal const string HELP_CONTENTS = @"
-Specifications:
-https://github.com/chr1st0scli/RainLisp/blob/master/RainLisp/Docs/contents.md
+Specification:
+https://chr1st0scli.github.io/RainLisp/RainLisp/Docs/contents.html
 
 Tutorial:
-https://github.com/chr1st0scli/RainLisp/blob/master/RainLisp/Docs/quick-start.md";
+https://chr1st0scli.github.io/RainLisp/RainLisp/Docs/quick-start.html";
 
         internal const string LOGO = @"
 
@@ -93,6 +94,7 @@ https://github.com/chr1st0scli/RainLisp/blob/master/RainLisp/Docs/quick-start.md
 
         internal const string INFO = @"
 Console version {0}
+RainLisp version {1}
 
   _____       _      __     _           
  |  __ \     (_)     \ \   (_)          
@@ -104,6 +106,7 @@ Console version {0}
                                  |_|    
 
 https://github.com/chr1st0scli/RainLisp
+https://github.com/chr1st0scli/RainLispConsole
 ";
     }
 }

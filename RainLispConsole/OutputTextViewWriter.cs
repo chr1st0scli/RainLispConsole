@@ -8,7 +8,6 @@ namespace RainLispConsole
         private readonly OutputTextView _textView;
         private readonly bool _errorMode;
 
-        private const string WINDOWS_STDOUT_BEACON = "\u001b[3J";
         private const string LINUX_STDOUT_BEACON0 = "\u001b[0 q";
         private const string LINUX_STDOUT_BEACON1 = "\u001b[1 q";
 
@@ -24,7 +23,7 @@ namespace RainLispConsole
         {
             // Terminal.Gui writes this string to the standard output for some reason, whenever the window resizes or modal dialogs appear.
             // Prevent them from being displayed.
-            if (value == WINDOWS_STDOUT_BEACON || value == LINUX_STDOUT_BEACON0 || value == LINUX_STDOUT_BEACON1)
+            if (value == LINUX_STDOUT_BEACON0 || value == LINUX_STDOUT_BEACON1)
                 return;
 
             if (_errorMode)

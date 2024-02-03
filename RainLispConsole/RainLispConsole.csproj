@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ApplicationIcon>RainLisp.ico</ApplicationIcon>
     <Title>A REPL and code editor console application for RainLisp</Title>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <Authors>Christos Giamouridis</Authors>
     <Company>Rainsoft</Company>
     <Description>A REPL and code editor console application for RainLisp.</Description>
@@ -20,7 +20,7 @@
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/chr1st0scli/RainLispConsole/releases</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="RainLisp.ico" />
@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
-    <PackageReference Include="RainLisp" Version="1.0.0" />
-    <PackageReference Include="Terminal.Gui" Version="1.14.0" />
+    <PackageReference Include="RainLisp" Version="1.1.0" />
+    <PackageReference Include="Terminal.Gui" Version="1.15.1" />
   </ItemGroup>
 </Project>

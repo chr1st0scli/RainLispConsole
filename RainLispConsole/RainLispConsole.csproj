@@ -42,6 +42,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
     <PackageReference Include="RainLisp" Version="1.1.0" />
-    <PackageReference Include="Terminal.Gui" Version="1.14.0" />
+    <PackageReference Include="Terminal.Gui" Version="1.15.1" />
   </ItemGroup>
 </Project>

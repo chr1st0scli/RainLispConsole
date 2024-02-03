@@ -255,7 +255,7 @@ namespace RainLispConsole
             => MessageBox.Query(Resources.HELP, Resources.HELP_CONTENTS, Resources.OK);
 
         private void About()
-            => MessageBox.Query(Resources.ABOUT, string.Format(Resources.INFO, Util.TryGetCurrentVersion()), Resources.OK);
+            => MessageBox.Query(Resources.ABOUT, string.Format(Resources.INFO, Util.TryGetCurrentVersion(), Util.TryGetRainLispVersion()), Resources.OK);
 
         private void Evaluate()
         {

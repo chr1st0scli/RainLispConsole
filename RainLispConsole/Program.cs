@@ -7,7 +7,7 @@ using RainLispConsole;
 int exitCode = 0;
 var interpreter = new Interpreter();
 
-void PrintHelp() => Console.WriteLine(string.Format(Resources.COMMAND_LINE_HELP, Util.TryGetCurrentVersion()));
+void PrintHelp() => Console.WriteLine(string.Format(Resources.COMMAND_LINE_HELP, Util.TryGetCurrentVersion(), Util.TryGetRainLispVersion()));
 
 #region Command line arguments.
 void PrintErrorAndSetExitCode(string message, Exception ex, bool unknownError)

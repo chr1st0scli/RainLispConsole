@@ -16,6 +16,14 @@ Semantic versioning is followed.
 
 ### Removed
 
+## [1.2.0] - 2024-07-03
+
+### Fixed
+- Num pad's 2 key press does not work as a menu option. #14
+
+### Changed
+- Upgrade dependency RainLisp 1.1.0 to 1.3.0.
+
 ## [1.1.0] - 2024-02-03
 
 ### Changed

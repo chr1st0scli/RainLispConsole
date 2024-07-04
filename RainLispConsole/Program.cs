@@ -54,7 +54,7 @@ do
     {
         ConsoleKey.D0 or ConsoleKey.NumPad0 => Mode.SingleLineRepl,
         ConsoleKey.D1 or ConsoleKey.NumPad1 => Mode.MultiLineRepl,
-        ConsoleKey.D2 or ConsoleKey.NumPad1 => Mode.Editor,
+        ConsoleKey.D2 or ConsoleKey.NumPad2 => Mode.Editor,
         ConsoleKey.D3 or ConsoleKey.NumPad3 => Mode.Help,
         _ => Mode.None
     };

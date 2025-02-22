@@ -16,6 +16,14 @@ Semantic versioning is followed.
 
 ### Removed
 
+## [1.3.0] - 2025-02-22
+
+### Added
+- Support for streams, i.e. infinite sequences in RainLisp.
+
+### Changed
+- Upgrade dependency RainLisp 1.3.0 to 1.4.0.
+
 ## [1.2.0] - 2024-07-03
 
 ### Fixed

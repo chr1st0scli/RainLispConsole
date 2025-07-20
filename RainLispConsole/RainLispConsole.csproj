@@ -6,11 +6,11 @@
     <Nullable>enable</Nullable>
     <ApplicationIcon>RainLisp.ico</ApplicationIcon>
     <Title>A REPL and code editor console application for RainLisp</Title>
-    <Version>1.3.0</Version>
+    <Version>1.4.0</Version>
     <Authors>Christos Giamouridis</Authors>
     <Company>Rainsoft</Company>
     <Description>A REPL and code editor console application for RainLisp.</Description>
-    <Copyright>2023</Copyright>
+    <Copyright>2023-2025</Copyright>
     <PackageProjectUrl>https://github.com/chr1st0scli/RainLispConsole</PackageProjectUrl>
     <PackageIcon>RainLisp-Colored-128x128.png</PackageIcon>
     <PackageReadmeFile>nuget.md</PackageReadmeFile>
@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
-    <PackageReference Include="RainLisp" Version="1.4.0" />
+    <PackageReference Include="RainLisp" Version="1.5.0" />
     <PackageReference Include="Terminal.Gui" Version="1.15.1" />
   </ItemGroup>
 </Project>

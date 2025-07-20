@@ -16,6 +16,15 @@ Semantic versioning is followed.
 
 ### Removed
 
+## [1.4.0] - 2025-07-20
+
+### Added
+- Support for `at-list` library procedure that returns a list item at a given position.
+- Support for `at-stream` library procedure that returns a stream item at a given position.
+
+### Changed
+- Upgrade dependency RainLisp 1.4.0 to 1.5.0.
+
 ## [1.3.0] - 2025-02-22
 
 ### Added

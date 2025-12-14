@@ -23,10 +23,10 @@
 
 
 # Modifications to support the terminal gui library (editor mode) in docker.
-FROM mcr.microsoft.com/dotnet/runtime:6.0-alpine3.16-amd64 AS base
+FROM mcr.microsoft.com/dotnet/runtime:8.0-alpine3.19 AS base
 WORKDIR /app
 
-FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine3.16-amd64 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine3.19 AS build
 WORKDIR /src
 COPY ["RainLispConsole/RainLispConsole.csproj", "RainLispConsole/"]
 RUN dotnet restore "RainLispConsole/RainLispConsole.csproj"

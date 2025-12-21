@@ -16,6 +16,11 @@ Semantic versioning is followed.
 
 ### Removed
 
+## [2.0.0] - 2025-12-21
+
+### Changed
+- Target .NET 8.
+
 ## [1.4.0] - 2025-07-20
 
 ### Added

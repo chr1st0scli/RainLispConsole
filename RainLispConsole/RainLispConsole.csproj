@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk;Microsoft.NET.Sdk.Publish">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <ApplicationIcon>RainLisp.ico</ApplicationIcon>
     <Title>A REPL and code editor console application for RainLisp</Title>
-    <Version>1.4.0</Version>
+    <Version>2.0.0</Version>
     <Authors>Christos Giamouridis</Authors>
     <Company>Rainsoft</Company>
     <Description>A REPL and code editor console application for RainLisp.</Description>
@@ -40,8 +40,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
-    <PackageReference Include="RainLisp" Version="1.5.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="RainLisp" Version="2.0.0" />
     <PackageReference Include="Terminal.Gui" Version="1.15.1" />
   </ItemGroup>
 </Project>

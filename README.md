@@ -17,14 +17,22 @@ It can be used in three ways:
 - As a tool with command line arguments that allows the interpreter to be used with other editors or tools.
 
 ## Installation
-You need to have .NET 6 or later installed.
-
-In order to download RainLispConsole from NuGet and install it as a global tool, run the following command in a command line shell.
+The installation depends on the .NET runtime that you have installed. Issue the following command to determine your runtimes.
 ```
-dotnet tool install -g RainLispConsole
+dotnet --list-runtimes
 ```
 
-If you already have it installed and you want to update it, run the following command.
+If you **ONLY** have the .NET 6 runtime installed, you can't install the latest version which targets .NET 8.
+So, you need to install RainLispConsole 1.4.0.
+
+In order to download RainLispConsole from NuGet and install it as a global tool, run the command that corresponds to your .NET runtime.
+
+|.NET Runtime|Command|
+|------------|-------|
+|6|dotnet tool install -g RainLispConsole --version 1.4.0|
+|8|dotnet tool install -g RainLispConsole|
+
+If you already have the latest version installed and you want to update it, run the following command.
 ```
 dotnet tool update -g RainLispConsole
 ```

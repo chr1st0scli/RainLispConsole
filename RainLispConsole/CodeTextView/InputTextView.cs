@@ -23,7 +23,7 @@ namespace RainLispConsole.CodeTextView
 
             var suggestions = CodeSuggestionsProvider.GetRainLispSuggestions();
             _keywords = new(suggestions);
-            _linesAnalysis = new();
+            _linesAnalysis = [];
 
             Autocomplete.AllSuggestions = suggestions;
             Autocomplete.MaxWidth = suggestions.Max(s => s.Length);
@@ -65,11 +65,10 @@ namespace RainLispConsole.CodeTextView
 
             // Search for the first comment start character outside of a string.
             var commentMatch = Regex.Matches(lineText, Delimiters.COMMENT.ToString())
-                .Where(m => !strings.Any(si => si.Start <= m.Index && si.End >= m.Index))
-                .FirstOrDefault();
+                .FirstOrDefault(m => !strings.Any(si => si.Start <= m.Index && si.End >= m.Index));
 
             int startIndex = 0;
-            string textForWordAnalysis = commentMatch?.Index > 0 ? lineText.Substring(0, commentMatch.Index) : lineText;
+            string textForWordAnalysis = commentMatch?.Index > 0 ? lineText[..commentMatch.Index] : lineText;
 
             // Identify words separated by white space characters or delimeters.
             var words = Regex.Split(textForWordAnalysis, $"[\\s{Delimiters.LPAREN}{Delimiters.RPAREN}{Delimiters.COMMENT}]")

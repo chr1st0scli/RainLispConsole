@@ -22,15 +22,15 @@ The installation depends on the .NET runtime that you have installed. Issue the 
 dotnet --list-runtimes
 ```
 
-If you **ONLY** have the .NET 6 runtime installed, you can't install the latest version which targets .NET 8.
-So, you need to install RainLispConsole 1.4.0.
+If you **ONLY** have an older .NET runtime installed, you can't install the latest version which targets .NET 10.
 
 In order to download RainLispConsole from NuGet and install it as a global tool, run the command that corresponds to your .NET runtime.
 
 |.NET Runtime|Command|
 |------------|-------|
 |6|dotnet tool install -g RainLispConsole --version 1.4.0|
-|8|dotnet tool install -g RainLispConsole|
+|8|dotnet tool install -g RainLispConsole --version 2.0.0|
+|10|dotnet tool install -g RainLispConsole|
 
 If you already have the latest version installed and you want to update it, run the following command.
 ```

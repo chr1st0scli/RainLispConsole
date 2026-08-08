@@ -9,7 +9,7 @@ namespace RainLispConsole.CodeTextView
     {
         public static List<string> GetRainLispSuggestions()
         {
-            List<string> list = new();
+            List<string> list = [];
 
             LoadRainLispKeywords(list);
             LoadRainLispProcedureNames(list);

@@ -3,19 +3,13 @@ using Terminal.Gui;
 
 namespace RainLispConsole
 {
-    internal class OutputTextViewWriter : TextWriter
+    internal class OutputTextViewWriter(OutputTextView textView, bool errorMode) : TextWriter
     {
-        private readonly OutputTextView _textView;
-        private readonly bool _errorMode;
+        private readonly OutputTextView _textView = textView ?? throw new ArgumentNullException(nameof(textView));
+        private readonly bool _errorMode = errorMode;
 
         private const string LINUX_STDOUT_BEACON0 = "\u001b[0 q";
         private const string LINUX_STDOUT_BEACON1 = "\u001b[1 q";
-
-        public OutputTextViewWriter(OutputTextView textView, bool errorMode)
-        {
-            _textView = textView ?? throw new ArgumentNullException(nameof(textView));
-            _errorMode = errorMode;
-        }
 
         public override Encoding Encoding => Console.OutputEncoding;
 

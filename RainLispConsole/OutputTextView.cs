@@ -7,17 +7,17 @@ namespace RainLispConsole
     {
         private readonly Attribute _white;
         private readonly Attribute _red;
-        private readonly IList<string> _errorLines;
+        private readonly List<string> _errorLines;
         private readonly HashSet<List<Rune>> _errorLinesCache;
-        private readonly char[] _lineSeparators = { '\r', '\n' };
+        private readonly char[] _lineSeparators = ['\r', '\n'];
 
         public OutputTextView()
         {
             _white = Driver.MakeAttribute(Color.White, Color.Black);
             _red = Driver.MakeAttribute(Color.Red, Color.Black);
             ReadOnly = true;
-            _errorLines = new List<string>();
-            _errorLinesCache = new();
+            _errorLines = [];
+            _errorLinesCache = [];
         }
 
         public void RegisterError(string? error)

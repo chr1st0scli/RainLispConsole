@@ -25,7 +25,7 @@ namespace RainLispConsole
         {
             _interpreter = interpreter ?? throw new ArgumentNullException(nameof(interpreter));
 
-            _allowedFileTypes = new List<string> { Resources.FILE_EXT };
+            _allowedFileTypes = [Resources.FILE_EXT];
 
             Application.Init();
 
